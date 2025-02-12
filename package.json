@@ -7,9 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy  --base-href=/gh-service-worker/ --dir=dist/voice-recognization-angular"
-
-
+    "deploy": "ng deploy --no-nojekyll --no-notfound --dir=dist/gh-service-worker"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +19,7 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "@angular/service-worker": "^15.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServiceWorkerService } from './services/service-worker.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'service-worker-demo';
+  constructor(public serviceWorker: ServiceWorkerService) {
+ }
+
+
+ closeNotification(){
+  this.serviceWorker.newVersionAvailable = false
+ }
+
 }
