@@ -37,6 +37,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/gh-service-worker/",
               "budgets": [
                 {
                   "type": "initial",

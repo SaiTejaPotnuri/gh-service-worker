@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy  --base-href=/gh-service-worker/ --dir=dist/voice-recognization-angular"
+
+
   },
   "private": true,
   "dependencies": {
