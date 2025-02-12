@@ -17,8 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-             "baseHref": "/gh-service-worker",
-            "outputPath": "dist/service-worker-demo",
+            "baseHref": "/gh-service-worker",
+            "outputPath": "dist/gh-service-worker",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
