@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+             "baseHref": "/gh-service-worker",
             "outputPath": "dist/service-worker-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -97,8 +98,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9140bf20-256e-42c3-bced-daef834a06e0"
   }
 }
